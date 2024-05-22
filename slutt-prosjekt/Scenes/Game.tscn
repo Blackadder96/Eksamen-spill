@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b7xoahwsahbeu"]
+[gd_scene load_steps=27 format=3 uid="uid://b7xoahwsahbeu"]
 
 [ext_resource type="PackedScene" uid="uid://snxo5ghdubti" path="res://Scenes/player.tscn" id="1_h21hl"]
 [ext_resource type="Texture2D" uid="uid://b5q5aeeyasd62" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/oak_woods_tileset.png" id="2_ifr5v"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://bofphfsxhb76s" path="res://Scenes/chain.tscn" id="5_gl7qk"]
 [ext_resource type="PackedScene" uid="uid://bn4tqk6kitsch" path="res://Scenes/coin.tscn" id="6_wbvba"]
 [ext_resource type="PackedScene" uid="uid://b6balbo4lts87" path="res://Scenes/killzone.tscn" id="7_sr7dq"]
+[ext_resource type="Texture2D" uid="uid://cuoj302vppfnw" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_1.png" id="8_hd4k7"]
+[ext_resource type="Texture2D" uid="uid://c2u7mbvt5udks" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_3.png" id="8_te8d8"]
+[ext_resource type="Texture2D" uid="uid://dodk7j1is011s" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_2.png" id="9_so32t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ilbp"]
 texture = ExtResource("2_ifr5v")
@@ -1312,3 +1315,100 @@ scale = Vector2(1.38393, 1.95302)
 libraries = {
 "": SubResource("AnimationLibrary_kf8p0")
 }
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="tåke1" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(21, -29)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/tåke1"]
+texture = ExtResource("8_hd4k7")
+
+[node name="tåke2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(341, -29)
+scale = Vector2(1, 0.88)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/tåke2"]
+texture = ExtResource("8_hd4k7")
+
+[node name="tåke3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(661, -26)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/tåke3"]
+texture = ExtResource("8_hd4k7")
+
+[node name="tåke4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(981, -26)
+scale = Vector2(1, 0.88)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/tåke4"]
+texture = ExtResource("8_hd4k7")
+
+[node name="tåke5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1297, -21)
+scale = Vector2(1, 0.88)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/tåke5"]
+texture = ExtResource("8_hd4k7")
+
+[node name="tåke6" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1614, -30)
+scale = Vector2(1, 0.88)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/tåke6"]
+texture = ExtResource("8_hd4k7")
+
+[node name="unclear skog" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-141, -120)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/unclear skog"]
+texture_filter = 1
+texture = ExtResource("9_so32t")
+centered = false
+
+[node name="skog" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-141, -120)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/skog"]
+texture_filter = 1
+texture = ExtResource("8_te8d8")
+centered = false
+
+[node name="unclear skog2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(498, -120)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/unclear skog2"]
+texture_filter = 1
+texture = ExtResource("9_so32t")
+centered = false
+
+[node name="skog2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(498, -120)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/skog2"]
+texture_filter = 1
+texture = ExtResource("8_te8d8")
+centered = false
+
+[node name="unclear skog3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1138, -121)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/unclear skog3"]
+texture_filter = 1
+texture = ExtResource("9_so32t")
+centered = false
+
+[node name="skog3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1138, -121)
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/skog3"]
+texture_filter = 1
+texture = ExtResource("8_te8d8")
+centered = false
