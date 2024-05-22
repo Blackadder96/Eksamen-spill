@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://caprdsxl65owf"]
+
+[ext_resource type="Texture2D" uid="uid://c4bj5hyatjhpu" path="res://assets/kenney_platformer-pack-industrial/Spritesheet/platformIndustrial_sheet.png" id="1_nng46"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4o1fb"]
+size = Vector2(59, 16)
+
+[node name="plaform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5.25, -6.75)
+scale = Vector2(0.847826, 0.534483)
+texture = ExtResource("1_nng46")
+region_enabled = true
+region_rect = Rect2(280.209, 574.196, 69.5195, 29.4931)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, -6)
+shape = SubResource("RectangleShape2D_4o1fb")
+one_way_collision = true
