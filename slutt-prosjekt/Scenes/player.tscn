@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://snxo5ghdubti"]
+[gd_scene load_steps=9 format=3 uid="uid://snxo5ghdubti"]
 
 [ext_resource type="Texture2D" uid="uid://dsgqx2aku8pg3" path="res://Adventurer/adventurer-Sheet.png" id="1_2oc1e"]
+[ext_resource type="Script" path="res://player.gd" id="1_06jhq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdh0d"]
 atlas = ExtResource("1_2oc1e")
@@ -43,12 +44,13 @@ radius = 6.0
 height = 32.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_06jhq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1svun")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.344954
+frame_progress = 0.0105556
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
