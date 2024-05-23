@@ -1,12 +1,12 @@
 [gd_scene load_steps=27 format=3 uid="uid://b7xoahwsahbeu"]
 
-[ext_resource type="PackedScene" uid="uid://snxo5ghdubti" path="res://Scenes/player.tscn" id="1_h21hl"]
+[ext_resource type="PackedScene" uid="uid://snxo5ghdubti" path="res://scenes/player.tscn" id="1_h21hl"]
 [ext_resource type="Texture2D" uid="uid://b5q5aeeyasd62" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/oak_woods_tileset.png" id="2_ifr5v"]
 [ext_resource type="Texture2D" uid="uid://cr2iex1dcb5i3" path="res://assets/Dungeon Tile Set/Dungeon Tile Set/Dungeon Tile Set.png" id="3_htyw1"]
-[ext_resource type="PackedScene" uid="uid://caprdsxl65owf" path="res://Scenes/plaform.tscn" id="4_0bldn"]
-[ext_resource type="PackedScene" uid="uid://bofphfsxhb76s" path="res://Scenes/chain.tscn" id="5_gl7qk"]
-[ext_resource type="PackedScene" uid="uid://bn4tqk6kitsch" path="res://Scenes/coin.tscn" id="6_wbvba"]
-[ext_resource type="PackedScene" uid="uid://b6balbo4lts87" path="res://Scenes/killzone.tscn" id="7_sr7dq"]
+[ext_resource type="PackedScene" uid="uid://caprdsxl65owf" path="res://scenes/plaform.tscn" id="4_0bldn"]
+[ext_resource type="PackedScene" uid="uid://bofphfsxhb76s" path="res://scenes/chain.tscn" id="5_gl7qk"]
+[ext_resource type="PackedScene" uid="uid://bn4tqk6kitsch" path="res://scenes/coin.tscn" id="6_wbvba"]
+[ext_resource type="PackedScene" uid="uid://b6balbo4lts87" path="res://scenes/killzone.tscn" id="7_sr7dq"]
 [ext_resource type="Texture2D" uid="uid://cuoj302vppfnw" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_1.png" id="8_hd4k7"]
 [ext_resource type="Texture2D" uid="uid://c2u7mbvt5udks" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_3.png" id="8_te8d8"]
 [ext_resource type="Texture2D" uid="uid://dodk7j1is011s" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_2.png" id="9_so32t"]
@@ -1143,6 +1143,21 @@ _data = {
 "RESET": SubResource("Animation_att4v")
 }
 
+[sub_resource type="Animation" id="Animation_hjb56"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1418, 349)]
+}
+
 [sub_resource type="Animation" id="Animation_3fmkf"]
 resource_name = "platform2"
 length = 1.5
@@ -1160,25 +1175,26 @@ tracks/0/keys = {
 "values": [Vector2(1418, 349), Vector2(1508, 349)]
 }
 
-[sub_resource type="Animation" id="Animation_hjb56"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1418, 349)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_c5w2t"]
 _data = {
 "RESET": SubResource("Animation_hjb56"),
 "platform2": SubResource("Animation_3fmkf")
+}
+
+[sub_resource type="Animation" id="Animation_2ywsg"]
+length = 3.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.001, 3),
+"transitions": PackedFloat32Array(1, 1, 2.73208),
+"update": 0,
+"values": [0.214797, 0.214797, -0.640536]
 }
 
 [sub_resource type="Animation" id="Animation_oqjmw"]
@@ -1196,21 +1212,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.214797, -0.107178]
-}
-
-[sub_resource type="Animation" id="Animation_2ywsg"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.214797]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kf8p0"]
@@ -1242,6 +1243,8 @@ position = Vector2(29, -14)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, 2)
 zoom = Vector2(4, 4)
+limit_left = 0
+limit_top = -10000
 limit_bottom = 400
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -1307,7 +1310,7 @@ autoplay = "platform2"
 [node name="animasjon objeter" type="Node" parent="."]
 
 [node name="chain" parent="animasjon objeter" instance=ExtResource("5_gl7qk")]
-position = Vector2(1461, 254)
+position = Vector2(1461, 235)
 rotation = 0.214797
 scale = Vector2(1.38393, 1.95302)
 
@@ -1315,6 +1318,18 @@ scale = Vector2(1.38393, 1.95302)
 libraries = {
 "": SubResource("AnimationLibrary_kf8p0")
 }
+autoplay = "RESET"
+
+[node name="chain2" parent="animasjon objeter" instance=ExtResource("5_gl7qk")]
+position = Vector2(381, 175)
+rotation = 0.214797
+scale = Vector2(1.38393, 1.95302)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="animasjon objeter/chain2"]
+libraries = {
+"": SubResource("AnimationLibrary_kf8p0")
+}
+autoplay = "RESET"
 
 [node name="backgrund" type="Node" parent="."]
 

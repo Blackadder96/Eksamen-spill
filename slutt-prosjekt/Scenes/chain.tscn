@@ -9,11 +9,11 @@ height = 24.0
 [node name="chain" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1, 0)
+position = Vector2(0, 9)
 texture = ExtResource("1_2v7jt")
 region_enabled = true
 region_rect = Rect2(35, 190, 10, 24)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 0)
+position = Vector2(0, 9)
 shape = SubResource("CapsuleShape2D_qpxlt")
