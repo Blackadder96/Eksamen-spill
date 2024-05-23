@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b7xoahwsahbeu"]
+[gd_scene load_steps=28 format=3 uid="uid://b7xoahwsahbeu"]
 
 [ext_resource type="PackedScene" uid="uid://snxo5ghdubti" path="res://scenes/player.tscn" id="1_h21hl"]
 [ext_resource type="Texture2D" uid="uid://b5q5aeeyasd62" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/oak_woods_tileset.png" id="2_ifr5v"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cuoj302vppfnw" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_1.png" id="8_hd4k7"]
 [ext_resource type="Texture2D" uid="uid://c2u7mbvt5udks" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_3.png" id="8_te8d8"]
 [ext_resource type="Texture2D" uid="uid://dodk7j1is011s" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_2.png" id="9_so32t"]
+[ext_resource type="PackedScene" uid="uid://dnpebdsbt5itw" path="res://scenes/fiende_1.tscn" id="11_vjelj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ilbp"]
 texture = ExtResource("2_ifr5v")
@@ -1243,8 +1244,7 @@ position = Vector2(29, -14)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, 2)
 zoom = Vector2(4, 4)
-limit_left = 0
-limit_top = -10000
+limit_top = -100
 limit_bottom = 400
 limit_smoothed = true
 position_smoothing_enabled = true
@@ -1429,3 +1429,6 @@ motion_mirroring = Vector2(320, 0)
 texture_filter = 1
 texture = ExtResource("8_te8d8")
 centered = false
+
+[node name="Fiende 1" parent="." instance=ExtResource("11_vjelj")]
+position = Vector2(239, 239)
