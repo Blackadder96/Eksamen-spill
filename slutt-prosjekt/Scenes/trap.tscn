@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnpebdsbt5itw"]
+
+[ext_resource type="Texture2D" uid="uid://cr2iex1dcb5i3" path="res://assets/Dungeon Tile Set/Dungeon Tile Set/Dungeon Tile Set.png" id="1_10fd3"]
+[ext_resource type="PackedScene" uid="uid://b6balbo4lts87" path="res://Scenes/killzone.tscn" id="2_etueh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q88av"]
+size = Vector2(21, 10)
+
+[node name="trap" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_10fd3")
+region_enabled = true
+region_rect = Rect2(35, 231, 22, 9)
+
+[node name="Killzone" parent="." instance=ExtResource("2_etueh")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_q88av")
