@@ -18,3 +18,32 @@ body {
     width: 400px;
 }
 
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    background: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+.download-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
