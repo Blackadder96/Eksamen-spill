@@ -25,4 +25,5 @@ https://kenney.nl/assets/background-elements
 **noen platformene i spillet**
 https://kenney.nl/assets/platformer-art-pixel-redux
 
+**her hvor alt annet er finnet**
 https://itch.io/game-assets/free/tag-godot
