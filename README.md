@@ -17,13 +17,35 @@ Animasjon: Spillet inneholder jevne og engasjerende animasjoner som gir liv til 
 **Mål:**
 Målet med spillet er å fullføre alle nivåene ved å samle inn alle myntene og nå målstreken uten å miste alle livene. Spillet gir spillere en utfordrende, men givende opplevelse som belønner presisjon, timing og strategisk tenkning.
 
-**Assets jeg bruker hentet fra**
+# Spille-Assets jeg bruker i spillet
 
-**Background**
-https://kenney.nl/assets/background-elements
+Denne README-filen lister opp de forskjellige ressursene jeg bruker i mitt spillprosjekt. Ressursene inkluderer bakgrunner, plattformer, karakterer og lyder hentet fra ulike nettsteder. Jeg har tillatelse til å bruke disse ressursene så lenge jeg ikke tjener penger på prosjektet og ikke later som om jeg har laget dem.
 
-**noen platformene i spillet**
-https://kenney.nl/assets/platformer-art-pixel-redux
+**Nettsider jeg finner disse assets og lyder på:**
+- [Kenney](https://kenney.nl/)
+- [itch.io](https://itch.io/)
+- [Pixabay](https://pixabay.com/)
 
-**her hvor alt annet er finnet**
-https://itch.io/game-assets/free/tag-godot
+## Bakgrunner
+- [Kenney Background Elements](https://kenney.nl/assets/background-elements)
+- [Brullov Oak Woods](https://brullov.itch.io/oak-woods)
+
+## Plattformer i spillet
+- [Kenney Platformer Art Pixel Redux](https://kenney.nl/assets/platformer-art-pixel-redux)
+- [IncolGames Dungeon Platformer Tile Set Pixel Art](https://incolgames.itch.io/dungeon-platformer-tile-set-pixel-art)
+
+## Karakterer i spillet
+- [RVros Animated Pixel Hero](https://rvros.itch.io/animated-pixel-hero)
+
+## Lyder
+- [Pixabay Games Sound Effects](https://pixabay.com/sound-effects/search/games%20sound/)
+
+## Lisensinformasjon
+Jeg har lov til å bruke disse ressursene hvis følgende krav oppfylles:
+- Ressursene brukes ikke til å tjene penger.
+- Jeg later ikke som om jeg har laget disse ressursene selv.
+
+## Til de som laster ned spillet
+Hvis du laster ned og bruker spillet mitt, husk å følge disse kravene:
+- Ikke tjen penger på spillet uten tillatelse fra de opprinnelige skapere av ressursene.
+- Ikke påstå at du har laget de ressursene som er brukt i spillet.
