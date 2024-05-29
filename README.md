@@ -1,21 +1,32 @@
 # Eksamen-spill
 
-**Beskrivelse:**
-spillet mitt er et spennende plattformspill som utfordrer spiller som må navigere gjennom utfordrende nivåer fylt med fiender, trap, mynter osv. Spillerne må samle inn mynter mens de unngår farlige fiender og komme seg til målstreken. 
+## Innholdsfortegnelse
+1. [Beskrivelse](#beskrivelse)
+2. [Funksjoner](#funksjoner)
+3. [Mål](#mål)
+4. [Kontroller](#kontroller)
+5. [Spille-Assets](#spille-assets)
+6. [Lisensinformasjon](#lisensinformasjon)
+7. [Til de som laster ned spillet](#til-de-som-laster-ned-spillet)
 
-Her er linken til nettsiden der man kan laste den spillet
+## Beskrivelse
+Spillet mitt er et spennende plattformspill som utfordrer spiller som må navigere gjennom utfordrende nivåer fylt med fiender, feller, mynter osv. Spillerne må samle inn mynter mens de unngår farlige fiender og komme seg til målstreken. 
 
-**Funksjoner:**
+Her er linken til nettsiden der man kan laste ned spillet.
 
-Plattformspilling: Spillet inneholder dynamiske plattformer som spillere må hoppe mellom for å komme seg gjennom hvert nivå.
+## Funksjoner
+- **Plattformspilling:** Spillet inneholder dynamiske plattformer som spillere må hoppe mellom for å komme seg gjennom hvert nivå.
+- **Fiender:** Spillerne må unngå forskjellige fiender som beveger seg gjennom nivåene for å overleve.
+- **Mynter:** Mynter er spredt rundt på nivåene, og spillere må samle dem inn for å låse opp bonuser eller nå høyere poengsummer.
+- **Animasjon:** Spillet inneholder jevne og engasjerende animasjoner som gir liv til karakterer, fiender og miljøer.
 
-**Fiender:** Spillerne må unngå forskjellige fiender som beveger seg gjennom nivåene for å overleve.
-Mynter: Mynter er spredt rundt på nivåene, og spillere må samle dem inn for å låse opp bonuser eller nå høyere poengsummer.
-
-Animasjon: Spillet inneholder jevne og engasjerende animasjoner som gir liv til karakterer, fiender og miljøer.
-
-**Mål:**
+## Mål
 Målet med spillet er å fullføre alle nivåene ved å samle inn alle myntene og nå målstreken uten å miste alle livene. Spillet gir spillere en utfordrende, men givende opplevelse som belønner presisjon, timing og strategisk tenkning.
+
+## Kontroller
+- **Bevegelse:** Piltastene eller WASD for å bevege deg.
+- **Hopp:** Mellomromstasten for å hoppe.
+- **Angrep:** Venstre museknapp for å angripe.
 
 # Spille-Assets jeg bruker i spillet
 
