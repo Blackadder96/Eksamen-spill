@@ -51,6 +51,9 @@ Denne README-filen lister opp de forskjellige ressursene jeg bruker i mitt spill
 ## Lyder
 - [Pixabay Games Sound Effects](https://pixabay.com/sound-effects/search/games%20sound/)
 
+## GUI assets
+- [prinbles GUI Assets](https://prinbles.itch.io/silent)
+
 ## Lisensinformasjon
 Jeg har lov til å bruke disse ressursene hvis følgende krav oppfylles:
 - Ressursene brukes ikke til å tjene penger.
