@@ -10,3 +10,59 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qos2d")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = -1.0
+offset_right = 131.0
+offset_bottom = 30.0
+text = "få inn data"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 44.0
+offset_top = 45.0
+offset_right = 126.0
+offset_bottom = 76.0
+text = "slett data"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.124
+anchor_top = -0.168
+anchor_right = 0.124
+anchor_bottom = -0.168
+offset_left = 112.152
+offset_top = 107.864
+offset_right = 350.152
+offset_bottom = 145.864
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 149.0
+offset_right = 251.0
+offset_bottom = 37.0
+text = "nickname:"
+
+[node name="TextEdit3" type="TextEdit" parent="."]
+offset_left = 148.0
+offset_top = 48.0
+offset_right = 250.0
+offset_bottom = 85.0
+text = "score:"
+
+[node name="TextEdit4" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.124
+anchor_top = -0.168
+anchor_right = 0.124
+anchor_bottom = -0.168
+offset_left = 117.152
+offset_top = 154.864
+offset_right = 355.152
+offset_bottom = 192.864
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
