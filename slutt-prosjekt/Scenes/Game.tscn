@@ -1,16 +1,16 @@
 [gd_scene load_steps=28 format=3 uid="uid://b7xoahwsahbeu"]
 
-[ext_resource type="PackedScene" uid="uid://snxo5ghdubti" path="res://Scenes/player.tscn" id="1_h21hl"]
+[ext_resource type="PackedScene" uid="uid://snxo5ghdubti" path="res://scenes/player.tscn" id="1_h21hl"]
 [ext_resource type="Texture2D" uid="uid://b5q5aeeyasd62" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/oak_woods_tileset.png" id="2_ifr5v"]
 [ext_resource type="Texture2D" uid="uid://cr2iex1dcb5i3" path="res://assets/Dungeon Tile Set/Dungeon Tile Set/Dungeon Tile Set.png" id="3_htyw1"]
-[ext_resource type="PackedScene" uid="uid://caprdsxl65owf" path="res://Scenes/plaform.tscn" id="4_0bldn"]
-[ext_resource type="PackedScene" uid="uid://bofphfsxhb76s" path="res://Scenes/chain.tscn" id="5_gl7qk"]
-[ext_resource type="PackedScene" uid="uid://bn4tqk6kitsch" path="res://Scenes/coin.tscn" id="6_wbvba"]
-[ext_resource type="PackedScene" uid="uid://b6balbo4lts87" path="res://Scenes/killzone.tscn" id="7_sr7dq"]
+[ext_resource type="PackedScene" uid="uid://caprdsxl65owf" path="res://scenes/plaform.tscn" id="4_0bldn"]
+[ext_resource type="PackedScene" uid="uid://bofphfsxhb76s" path="res://scenes/chain.tscn" id="5_gl7qk"]
+[ext_resource type="PackedScene" uid="uid://bn4tqk6kitsch" path="res://scenes/coin.tscn" id="6_wbvba"]
+[ext_resource type="PackedScene" uid="uid://b6balbo4lts87" path="res://scenes/killzone.tscn" id="7_sr7dq"]
 [ext_resource type="Texture2D" uid="uid://cuoj302vppfnw" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_1.png" id="8_hd4k7"]
 [ext_resource type="Texture2D" uid="uid://c2u7mbvt5udks" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_3.png" id="8_te8d8"]
 [ext_resource type="Texture2D" uid="uid://dodk7j1is011s" path="res://assets/oak_woods_v1.0/oak_woods_v1.0/background/background_layer_2.png" id="9_so32t"]
-[ext_resource type="PackedScene" uid="uid://dnpebdsbt5itw" path="res://Scenes/trap.tscn" id="11_vjelj"]
+[ext_resource type="PackedScene" uid="uid://dnpebdsbt5itw" path="res://scenes/trap.tscn" id="11_vjelj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ilbp"]
 texture = ExtResource("2_ifr5v")
